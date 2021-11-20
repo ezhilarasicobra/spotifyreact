@@ -27,7 +27,7 @@ export default function Dashboard({ code }) {
     if (!playingTrack) return
 
     axios
-      .get("https://spotifnode.herokuapp.com/lyrics", {
+      .get("http://localhost:3001/lyrics", {
         params: {
           track: playingTrack.title,
           artist: playingTrack.artist,
@@ -74,7 +74,7 @@ export default function Dashboard({ code }) {
   }, [search, accessToken])
 
   return (
-    <Container className="d-flex flex-column py-2" style={{ height: "100vh" }}>
+    <Container className="d-flex flex-column py-2" style={{ height: "100vh" ,backgroundImage: `url("https://img.wallpapersafari.com/desktop/1024/576/85/97/SPO8k3.jpg")`}}>
       <Form.Control
         type="search"
         placeholder="Search Songs/Artists"

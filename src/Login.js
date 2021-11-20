@@ -8,10 +8,10 @@ export default function Login() {
   return (
     <Container
       className="d-flex justify-content-center align-items-center"
-      style={{ minHeight: "100vh" }}
+      style={{ minHeight: "100vh",backgroundImage: `url("https://img.wallpapersafari.com/desktop/1024/576/85/97/SPO8k3.jpg")`  }}
     >
       <a className="btn btn-success btn-lg" href={AUTH_URL}>
-        Login With Spotify
+        Song Lyric Finder
       </a>
     </Container>
   )
