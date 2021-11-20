@@ -34,7 +34,8 @@ export default function useAuth(code) {
           setAccessToken(res.data.accessToken)
           setExpiresIn(res.data.expiresIn)
         })
-        .catch(() => {
+        .catch((err) => {
+          console.log(err)
           window.location = "/"
         })
     }, (expiresIn - 60) * 1000)
